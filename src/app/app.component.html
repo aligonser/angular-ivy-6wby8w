@@ -17,3 +17,7 @@
 
 <input type="text" [(ngModel)]="username">
 <p>{{username}}</p>
+
+<!-- button disabled if nothing entered for username-->
+<!-- <button [disabled] = "username.length == 0 ">Click</button> -->
+<button [disabled] = "checkUserName()" (click) = "onClick2()">Click</button>
